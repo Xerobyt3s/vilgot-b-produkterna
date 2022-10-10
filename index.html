@@ -2,12 +2,31 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="./css/style.css">
+        <script src="./scripts/slideshow.js" defer></script>
     </head>
+
     <body>
         <div class="container">
             <header>
-                
+                <button class="menu-button"><img src="./images/menu-icon.png" alt="menu"></button>
             </header>
+
+            <!--this is the section and container for the featured product slideshow-->
+            <section aria-label="featured products">
+                <div class="slideshow" data-slideshow="">
+                    <ul data-slides="">
+                        <!--each li tag is a product slide-->
+                        <li class="slide" data-active><img src="./images/2.jpg" alt="gpu1"></li>
+                        <li class="slide"><img src="./images/3.jpg" alt="gpu2"></li>
+                        <li class="slide"><img src="./images/2.jpg" alt="gpu3"></li>
+                        <li class="slide"><img src="./images/3.jpg" alt="gpu4"></li>
+                    </ul>
+                    
+                    <button class="slide-button previus" data-slide-button="prev">&#60;</button>
+                    <button class="slide-button next" data-slide-button="next">&#62;</button>
+                </div>
+            </section>
+
         </div>
         
     </body>

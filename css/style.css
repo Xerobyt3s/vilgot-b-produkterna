@@ -1,3 +1,110 @@
-div {
-    display: flex;
+*, *::before, *::after {
+    box-sizing: border-box ;
 }
+
+body {
+    margin: 0%;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 5vh;
+    background-color: lightgray;
+}
+
+.menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+
+.menu-button > img {
+    height: 30px;
+    width: 30px;
+}
+
+
+/*below here is the style for the slideshow*/
+section {
+    margin-top: 5vh;
+}
+
+.slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 70vh;
+    position: relative;
+}
+
+.slideshow > ul {
+    list-style: none;
+}
+
+
+/*this controls size and opacity of the slides and images*/
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+}
+
+.slide[data-active] {
+    opacity: 1;
+    transition-delay: 0ms;
+}
+
+.slide > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*this controls the styles for the buttons to change slides*/
+.slide-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 3rem;
+    top: 50%;
+    color: rgba(255, 255, 255, 0.644);
+    cursor: pointer;
+    padding: 0.5rem;
+    transform: translateY(-50%);
+}
+
+.slide-button.next {
+    right: 1rem;
+}
+
+.slide-button.previus {
+    left: 1rem;
+}
+
+.slide-button:hover {
+    color: white;
+}
+
+
+
