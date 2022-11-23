@@ -3,7 +3,7 @@ const slideButtons = document.querySelectorAll("[data-slide-button]")
 //after each click this checks which button was pressed
 slideButtons.forEach(button => {
     button.addEventListener("click", () => {
-        const offset = button.dataset.slide-button === "next" ? 1 : -1
+        const offset = button.dataset.slide-button == "next" ? 1 : -1
         const slides = button
             .closest("[data-slideshow]")
             .querySelector("[data-slides]")

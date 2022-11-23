@@ -8,7 +8,8 @@
     <body>
         <div class="container">
             <header>
-                <div class="menu-button"><img class="menu-icon" src="../images/menu-icon.png" alt="menu">
+                <h2 id="title">Nvilgotia</h2>
+                <div class="menu-button"><img class="menu-icon" src="../images/menu.png" alt="menu">
                     <ul class="menu-content">
                         <li><a href="../index.html">Hem</a></li>
                         <li><a href="../html/contact.html">Contacts</a></li>
@@ -17,6 +18,21 @@
                     </ul>
                 </div>
             </header>
+            
+            <!--this is the section and container for the featured product slideshow-->
+            <section aria-label="featured products">
+                <h1>featured GPU</h1>
+                <div class="slideshow" data-slideshow="">
+                    <ul data-slides="">
+                        <li class="slide" data-active><img src="../images/1.jpg" alt="gpu1"></li>
+                        <li class="slide"><img src="../images/2.jpg" alt="gpu2"></li>
+                    </ul>
+                    
+                    <button class="slide-button previus" data-slide-button="prev">&#60;</button>
+                    <button class="slide-button next" data-slide-button="next">&#62;</button>
+                </div>
+            </section>
+
 
         </div>
         

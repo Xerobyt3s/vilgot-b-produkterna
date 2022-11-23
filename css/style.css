@@ -13,18 +13,42 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    background-color: rgb(17, 17, 17);
 }
 
 header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     width: 100vw;
     height: 5vh;
-    background-color: lightgray;
+    background-color: rgb(15, 15, 15);
+    border-bottom: solid 2px rgb(121, 199, 4);
 }
 
+h1 {
+    color: rgb(121, 199, 4);
+}
+h2 {
+    color: rgb(121, 199, 4);
+}
+
+p {
+    color: rgb(121, 199, 4);
+    text-align: center;
+}
+
+.raytracing-text {
+    margin: 1rem;
+}
+
+#title {
+    margin-left: 1rem;
+}
+#top-text {
+    margin-top: 3rem;
+}
 /*everything below until the section tag controlls the dropdown menu*/
 
 .menu-button {
@@ -67,20 +91,21 @@ header {
 .menu-content > li {
     width: 5rem;
     height: 2rem;
-    border: solid gray ;
+    border: solid rgb(121, 199, 4) ;
     margin: 0;
     text-align: center;
-    background-color: lightgray;
+    background-color: rgb(24, 24, 24);
     
 }
 
-.menu-content > a {
-    color: black;
+.menu-content > li > a {
+    color: rgb(121, 199, 4);
+    text-decoration: none;
 }
 
 /*under here is the code for the transitions/animations*/
 .menu-button:hover {
-    background-color: darkgray;
+    background-color: rgba(0, 0, 0, 0.62);
 }
 
 .menu-button:hover .menu-content {
@@ -94,9 +119,48 @@ header {
     bottom: -5rem;
 }
 
+/*below here is the style for the image comparison*/
+.comp-container {
+    overflow: hidden;
+    height: 65vh;
+    width: 60vw;
+}
+
+.comp-container > img {
+    height: 65vh;
+    width: 60vw;
+    position: absolute;
+}
+#ray-pic {
+    clip-path: polygon( 0 0, 50% 0, 50% 100%, 0 100% );
+}
+#slider {
+    position: relative;
+    -webkit-appearance: none;
+    width: calc( 100% + 40px );
+    height: 100%;
+    background-color: transparent;
+    margin-left: -20px;
+    outline: none;
+}
+#slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 2rem;
+    width: 2rem;
+    background: url("../images/slider.png"), rgba(60, 255, 0, 0.3);
+    border: 3px solid rgba(60, 255, 0, 0.3);
+    border-radius: 50%;
+    background-size: contain;
+    cursor: pointer;
+}
+
 /*below here is the style for the slideshow*/
 section {
     margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .slideshow {
@@ -117,6 +181,7 @@ section {
 .slide {
     position: absolute;
     inset: 0;
+    z-index: 1;
     opacity: 0;
     transition: 200ms opacity ease-in-out;
 }
@@ -124,6 +189,7 @@ section {
 .slide[data-active] {
     opacity: 1;
     transition-delay: 0ms;
+    z-index: 2;
 }
 
 .slide > img {
@@ -136,7 +202,7 @@ section {
 /*this controls the styles for the buttons to change slides*/
 .slide-button {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     background: none;
     border: none;
     font-size: 3rem;

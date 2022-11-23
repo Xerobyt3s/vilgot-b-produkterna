@@ -3,12 +3,14 @@
     <head>
         <link rel="stylesheet" href="./css/style.css">
         <script src="./scripts/slideshow.js" defer></script>
+        <script src="./scripts/comparison.js" defer></script>
     </head>
 
     <body>
         <div class="container">
             <header>
-                <div class="menu-button"><img class="menu-icon" src="./images/menu-icon.png" alt="menu">
+                <h2 id="title">Nvilgotia</h2>
+                <div class="menu-button"><img class="menu-icon" src="./images/menu.png" alt="menu">
                     <ul class="menu-content">
                         <li><a href="./html/products.html">Products</a></li>
                         <li><a href="./html/contact.html">Contacts</a></li>
@@ -18,21 +20,16 @@
                 </div>
             </header>
 
-            <!--this is the section and container for the featured product slideshow-->
-            <section aria-label="featured products">
-                <div class="slideshow" data-slideshow="">
-                    <ul data-slides="">
-                        <!--each li tag is a product slide-->
-                        <li class="slide" data-active><img src="./images/2.jpg" alt="gpu1"></li>
-                        <li class="slide"><img src="./images/3.jpg" alt="gpu2"></li>
-                        <li class="slide"><img src="./images/wise_tree.jpeg" alt="gpu3"></li>
-                        <li class="slide"><img src="./images/3.jpg" alt="gpu4"></li>
-                    </ul>
-                    
-                    <button class="slide-button previus" data-slide-button="prev">&#60;</button>
-                    <button class="slide-button next" data-slide-button="next">&#62;</button>
-                </div>
-            </section>
+            <h2 class="raytracing-text" id="top-text">Strålspårning</h2>
+            <h1 class="raytracing-text">Hyperrealistisk. Hypersnabb.</h1>
+            <p class="raytracing-text">Ada-arkitekturen tar strålspårningen till nya höjder och simulerar hur ljus beter sig i verkligheten. Med kraften hos RTX 40-serien och<br> tredje generationens RT-kärnor upplever du mer detaljerade virtuella världar än någonsin.</p>            
+            
+            <div class="comp-container">
+                <img src="./images/noray.webp" alt="no raytracing">
+                <img src="./images/ray.webp" alt="with raytracing" id="ray-pic">
+                <input type="range" min="0" max="1000" value="500" id="slider" oninput="compare()">
+            </div>
+
 
         </div>
         
