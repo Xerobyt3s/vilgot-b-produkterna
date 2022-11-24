@@ -48,6 +48,9 @@ h1 {
 h2 {
     color: rgb(121, 199, 4);
 }
+h3 {
+    color: rgb(121, 199, 4);
+}
 
 p {
     color: rgb(121, 199, 4);
@@ -65,6 +68,20 @@ p {
     margin-top: 3rem;
 }
 
+.info1 {
+    align-self: flex-start;
+    margin-left: 4rem;
+    width: 40%;
+}
+
+.info2 {
+    align-self: flex-end;
+    margin-right: 4rem;
+    width: 40%;
+}
+
+
+/*here i have the pictures as background to avoid the hastle of using posítion absolute*/
 #gpu1-info {
     display: flex;
     align-items: center;
@@ -97,6 +114,7 @@ p {
     width: 20%;
 }
 
+/*this is the buy button for both gpu1 and 2*/
 .buy-button {
     margin-top: 2rem;
     background-color: rgb(121, 199, 4);
@@ -123,8 +141,6 @@ p {
 .contact-survey label {
     color: rgb(121, 199, 4);
 }
-
-/*everything below until the section tag controlls the dropdown menu*/
 
 .menu-button {
     align-self: center;
@@ -194,18 +210,20 @@ p {
     bottom: -5rem;
 }
 
-/*below here is the style for the image comparison*/
 .comp-container {
     overflow: hidden;
     height: 65vh;
     width: 60vw;
 }
 
+/*here i used position absolute to be able to have 2 pictures in the same place*/
 .comp-container > img {
     height: 65vh;
     width: 60vw;
     position: absolute;
 }
+
+/*here i used a polygon later edited in js to difine which areas sould show or not*/
 #ray-pic {
     clip-path: polygon( 0 0, 50% 0, 50% 100%, 0 100% );
 }
