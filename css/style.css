@@ -94,7 +94,7 @@ p {
     margin-top: 8rem;
     width: 100vw;
     height: 90vh;
-    background-image: url(../images/1.jpg);
+    background-image: url(../images/gpu1.jpg);
     background-size: cover;
 }
 
@@ -105,7 +105,7 @@ p {
     margin: 4rem 0 2rem 0;
     width: 100vw;
     height: 90vh;
-    background-image: url(../images/2.jpg);
+    background-image: url(../images/gpu2.jpg);
     background-size: cover;
 }
 
