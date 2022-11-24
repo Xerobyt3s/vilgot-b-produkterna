@@ -196,6 +196,8 @@ p {
 #ray-pic {
     clip-path: polygon( 0 0, 50% 0, 50% 100%, 0 100% );
 }
+
+/*this is the style for the slider itself. note i need to find a way to do this without webkit*/
 #slider {
     position: relative;
     -webkit-appearance: none;
