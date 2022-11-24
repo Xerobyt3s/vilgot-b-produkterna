@@ -6,7 +6,7 @@
     </head>
 
     <body>
-        <div class="container">
+        <div class="container-products">
             <header>
                 <h2 id="title">Nvilgotia</h2>
                 <div class="menu-button"><img class="menu-icon" src="../images/menu.png" alt="menu">
@@ -24,16 +24,45 @@
                 <h1>featured GPU</h1>
                 <div class="slideshow" data-slideshow="">
                     <ul data-slides="">
-                        <li class="slide" data-active><img src="../images/1.jpg" alt="gpu1"></li>
-                        <li class="slide"><img src="../images/2.jpg" alt="gpu2"></li>
+                        <li class="slide" data-active><a href="#gpu1-info"><img src="../images/1.jpg" alt="gpu1"></a></li>
+                        <li class="slide"><a href="#gpu2-info"><img src="../images/2.jpg" alt="gpu2"></a></li>
                     </ul>
                     
                     <button class="slide-button previus" data-slide-button="prev">&#60;</button>
                     <button class="slide-button next" data-slide-button="next">&#62;</button>
                 </div>
             </section>
+            
 
-
+            <!--this is info on the products aswell as a non functioning buy button-->
+            <div id="gpu1-info">
+                <div class="gpu-text">
+                    <h1 >GeForce RTX 4090</h1>
+                    <h2 >BEYOND FAST</h2>
+                    <p class="gpu-p">NVIDIA® GeForce RTX™ 4090 är den ultimata GeForce-grafikprocessorn. 
+                        Det innebär ett enormt kliv inom prestanda, effektivitet och AI-driven grafik. 
+                        Upplev spel med ultrahög prestanda, otroligt detaljerade virtuella världar, 
+                        oöverträffad produktivitet och nya sätt att skapa. Det drivs av NVIDIA Ada 
+                        Lovelace-arkitekturen och har 24 GB G6X-minne för att leverera den ultimata 
+                        upplevelsen för spelare och innehållsskapare.
+                    </p>   
+                    <button class="buy-button">Visa Alla Köpalternativ</button>
+                </div>
+                </div>
+            <div id="gpu2-info">
+                <div class="gpu-text">
+                    <h1 >GeForce RTX 4080</h1>
+                    <h2 >BEYOND FAST</h2>
+                    <p class="gpu-p">NVIDIA® GeForce RTX™ 4080 ger dig den höga prestanda och 
+                        de funktioner som entusiaster och innehållsskapare kräver. Ge liv åt 
+                        dina spel och kreativa projekt med strålspårning och AI-driven grafik. 
+                        Det drivs av den ultraeffektiva NVIDIA Ada Lovelace-arkitekturen och ett 
+                        supersnabbt G6X-minne på 16 GB.
+                    </p>   
+                    <button class="buy-button">Visa Alla Köpalternativ</button>
+                </div>
+            </div>
+            
         </div>
         
     </body>
