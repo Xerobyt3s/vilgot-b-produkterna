@@ -111,6 +111,19 @@ p {
     background-color: rgb(98, 161, 2);
 }
 
+.contact-p {
+    width: 30%;
+}
+
+.contact-survey {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-survey label {
+    color: rgb(121, 199, 4);
+}
+
 /*everything below until the section tag controlls the dropdown menu*/
 
 .menu-button {
