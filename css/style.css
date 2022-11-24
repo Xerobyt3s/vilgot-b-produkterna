@@ -57,6 +57,11 @@ p {
     text-align: center;
 }
 
+.doc {
+    margin-top: 4rem;
+    width: 40%;
+}
+
 .raytracing-text {
     margin: 1rem;
 }
