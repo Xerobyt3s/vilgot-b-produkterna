@@ -57,7 +57,7 @@ p {
     text-align: center;
 }
 
-.doc {
+.documentation {
     margin-top: 4rem;
     width: 40%;
 }
@@ -73,13 +73,13 @@ p {
     margin-top: 3rem;
 }
 
-.info1 {
+.info-left {
     align-self: flex-start;
     margin-left: 4rem;
     width: 40%;
 }
 
-.info2 {
+.info-right {
     align-self: flex-end;
     margin-right: 4rem;
     width: 40%;
@@ -215,14 +215,14 @@ p {
     bottom: -5rem;
 }
 
-.comp-container {
+.comparison-container {
     overflow: hidden;
     height: 65vh;
     width: 60vw;
 }
 
 /*here i used position absolute to be able to have 2 pictures in the same place*/
-.comp-container > img {
+.comparison-container > img {
     height: 65vh;
     width: 60vw;
     position: absolute;
