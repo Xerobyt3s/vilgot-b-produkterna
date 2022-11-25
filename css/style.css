@@ -11,16 +11,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-/*.container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: rgb(17, 17, 17);
-}
-*/
 .container {
     width: 100vw;
     height: 100%;
