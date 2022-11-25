@@ -11,7 +11,7 @@ html {
 	scroll-behavior: smooth;
 }
 
-.container {
+/*.container {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -20,8 +20,8 @@ html {
     align-items: center;
     background-color: rgb(17, 17, 17);
 }
-
-.container-products {
+*/
+.container {
     width: 100vw;
     height: 100%;
     display: flex;
@@ -330,5 +330,47 @@ section {
     color: white;
 }
 
+footer {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 22rem;
+    background-color: rgb(66, 66, 66);
+}
 
+footer h2 {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0;
+}
 
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer h4 {
+    color: white;
+    text-decoration: none;
+}
+footer h3 {
+    color: white;
+    text-decoration: none;
+}
+
+footer li {
+    margin-top: 1rem;
+}
+
+.right-footer {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    
+}
+
+.left-footer {
+    margin-left: 2rem;
+}
